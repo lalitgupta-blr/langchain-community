@@ -338,6 +338,10 @@ if TYPE_CHECKING:
         ZenGuardInput,
         ZenGuardTool,
     )
+    from langchain_community.tools.vrx import (
+        VRXGovernanceTool,
+        VRXToolInput,
+    )
 
 __all__ = [
     "BaseTool",
@@ -485,6 +489,8 @@ __all__ = [
     "Detector",
     "ZenGuardInput",
     "ZenGuardTool",
+    "VRXGovernanceTool",
+    "VRXToolInput",
     "authenticate",
     "format_tool_to_openai_function",
 ]
@@ -638,6 +644,8 @@ _module_lookup = {
     "ZapierNLARunAction": "langchain_community.tools.zapier.tool",
     "ZenGuardInput": "langchain_community.tools.zenguard.tool",
     "ZenGuardTool": "langchain_community.tools.zenguard.tool",
+    "VRXGovernanceTool": "langchain_community.tools.vrx",
+    "VRXToolInput": "langchain_community.tools.vrx",
     "authenticate": "langchain_community.tools.office365.utils",
     "format_tool_to_openai_function": "langchain_community.tools.convert_to_openai",
     "tool": "langchain_core.tools",

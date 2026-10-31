@@ -141,6 +141,9 @@ if TYPE_CHECKING:
     from langchain_community.retrievers.zilliz import (
         ZillizRetriever,
     )
+    from langchain_community.retrievers.vrx import (
+        VRXPolicyRetriever,
+    )
 
 
 _module_lookup = {
@@ -189,6 +192,7 @@ _module_lookup = {
     "ZepCloudRetriever": "langchain_community.retrievers.zep_cloud",
     "ZillizRetriever": "langchain_community.retrievers.zilliz",
     "NeuralDBRetriever": "langchain_community.retrievers.thirdai_neuraldb",
+    "VRXPolicyRetriever": "langchain_community.retrievers.vrx",
 }
 
 
@@ -245,4 +249,5 @@ __all__ = [
     "ZepRetriever",
     "ZepCloudRetriever",
     "ZillizRetriever",
+    "VRXPolicyRetriever",
 ]
