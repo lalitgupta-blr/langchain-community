@@ -14,7 +14,7 @@ class TestVRXRetriever(unittest.TestCase):
             prediction="3",
             unit="business days",
             latency_ms=85.0,
-            serving_engine="vLLM Multi-LoRA Dynamic Multiplexer",
+            serving_engine="vLLM Multi-Task Dynamic Multiplexer",
             retraining_updates=0,
             provenance=VRXProvenance(
                 node_id="Rule_UHC_70553_v2",
